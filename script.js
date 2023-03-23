@@ -17,7 +17,7 @@ function calculateMinCost()
 	{
 		let first=pq.shift();
 		let second=pq.shift();
-		res=res+first+second;
+		res + = first+second;
 		pq.push(first+second);
 		pq.sort(function(a,b){
 			return a-b;
